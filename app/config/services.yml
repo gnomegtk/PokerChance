@@ -1,0 +1,9 @@
+# app/config/services.yml
+
+# service definition with class namespace as parameter
+parameters:
+    cardchance.class: AppBundle\Utils\CardChance
+
+services:
+    card-chance:
+        class: '%cardchance.class%'
